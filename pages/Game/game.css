@@ -1,0 +1,11 @@
+.banner {
+  background: url("../../asset/planet.png");
+  width: 100%;
+}
+.banner .carousel-box {
+  position: relative;
+  min-width: 950px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
