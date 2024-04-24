@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -231,4 +231,114 @@ body {
     left: -4%;
     height: 140px;
   }
+}
+.result-box {
+  z-index: 10;
+  position: relative;
+  margin-top: 7%;
+  width: 105%;
+  background-color: white;
+  border-radius: 10px;
+}
+.result-box ul {
+  padding: 5px 5px;
+}
+.result-box ul li {
+  list-style: none;
+
+  border-radius: 30px;
+}
+.result-box ul li:hover {
+  background-color: #e9f3ff;
+}
+.menu {
+  position: relative;
+  color: white;
+  width: 1300px;
+  left: 10%;
+}
+.menu h3 {
+  position: relative;
+  left: 25%;
+  margin-top: 3%;
+}
+.menu .genresList {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  left: 17%;
+  gap: 2%;
+  overflow: hidden;
+  backdrop-filter: brightness(30%);
+
+  backdrop-filter: opacity(30%);
+  border-radius: 30px;
+  padding: 15px;
+}
+.menu .genresList .genres img {
+  width: 300px;
+  filter: brightness(50%) blur(1px);
+  border-radius: 30px;
+}
+.menu .genresList .genres img:hover {
+  filter: brightness(100%);
+}
+.menu .genresList .genres p {
+  display: flex;
+  position: absolute;
+  left: 30px;
+  font-size: 1.5rem;
+  bottom: 1%;
+}
+.genresContainer {
+  position: relative;
+}
+.gameList {
+  background-color: rgba(0, 0, 0, 0.377);
+  border-radius: 20px;
+  margin-top: 1%;
+  margin-left: 1%;
+  width: 1380px;
+  height: 60vh;
+  display: grid;
+  position: relative;
+  left: 20%;
+  padding: 15px 0px 0px 15px;
+  overflow-y: scroll;
+  grid-row-gap: 10%;
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.gameContainer p {
+  display: inline;
+  position: relative;
+  top: 2%;
+  left: 10%;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.gameContainer img {
+  border-radius: 30px;
+  height: 175px;
+  width: 300px;
+}
+.gameContainer img:hover {
+  opacity: 90%;
+  border: 1px solid white;
 }

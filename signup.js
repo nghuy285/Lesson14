@@ -1,4 +1,5 @@
 const signUp = () => {
+  event.preventDefault();
   let username = document.getElementById("username").value;
   let password = document.getElementById("password").value;
   let rePassword = document.getElementById("re-enter").value;
@@ -20,11 +21,13 @@ const signUp = () => {
 
   var json = JSON.stringify(user);
   localStorage.setItem(username, json);
-  alert("Đăng ký thành công");
-  window.location.href = "./login.html";
+  alert("Sign up success!");
+  window.location.href = "login.html";
 };
 
 const login = () => {
+  event.preventDefault();
+
   let username = document.getElementById("username").value;
   let password = document.getElementById("password").value;
 
@@ -37,11 +40,13 @@ const login = () => {
   let data = JSON.parse(user);
 
   if (user == null) {
-    alert("Vui lòng nhập lại ");
+    alert("Please type again");
   } else if (username == data.username && password == data.password) {
-    alert("dang nhap thanh cong");
+    alert("Login success");
+    localStorage.setItem("isLoggedIn", true);
     window.location.href = "index.html";
   } else {
-    alert("dang nhap that bai");
+    alert("Login failed");
+    localStorage.setItem("isLoggedIn", false);
   }
 };

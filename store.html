@@ -3,29 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>IDC Store</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="all">
       <div class="navbar">
         <h2>IDC</h2>
-        <a href="./index.html">Home</a>
-        <a href="./store.html" class="active">Store</a>
-        <a href="./library.html">Library</a>
+        <a href="./index.html"><i class="fa-solid fa-house"></i>-Home</a>
+        <a href="./store.html" class="active"
+          ><i class="fa-solid fa-store"></i>-Store</a
+        >
+        <a href="./library.html"><i class="fa-solid fa-folder"></i>-Library</a>
       </div>
       <div class="container">
         <div class="search">
           <div class="box">
-            <input type="text" placeholder="Seach ... " />
+            <input type="text" id="input-box" placeholder="Seach ... " />
             <a href="">
               <i class="fa-solid fa-magnifying-glass" style="color: black"></i>
             </a>
+            <div class="result-box"></div>
           </div>
         </div>
+
         <div class="account">
-          <button class="login">Login</button>
-          <button class="sign up">Sign Up</button>
+          <a href="login.html"><button class="login">Login</button></a>
+          <a href="signup.html"><button class="sign up">Sign Up</button></a>
+        </div>
+      </div>
+
+      <div class="menu">
+        <h3>Popular Genres</h3>
+        <div class="genresList">
+          <div class="genres">
+            <div class="genresContainer">
+              <a href="adventure.html"><img src="./asset/adventure.jpg" /></a>
+              <p>Adventure</p>
+            </div>
+          </div>
+          <div class="genres">
+            <div class="genresContainer">
+              <a href=""><img src="./asset/driving.jpg" /></a>
+              <p>Driving</p>
+            </div>
+          </div>
+          <div class="genres">
+            <div class="genresContainer">
+              <a href=""><img src="./asset/fps.jpg" /></a>
+              <p>FPS</p>
+            </div>
+          </div>
+
+          <div class="genres">
+            <div class="genresContainer">
+              <a href=""><img src="./asset/action.jpg" /></a>
+              <p>Action</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gameList">
+        <div class="gameContainer">
+          <a href=""> <img src="./asset/little nightmares.jpg" /> </a>
+
+          <p>Little Nightmare</p>
+          <br />
+        </div>
+        <div class="gameContainer">
+          <a href=""> <img src="./asset/unravel.jpg" /> </a>
+          <p>Unravel</p>
+          <br />
+        </div>
+        <div class="gameContainer">
+          <a href=""> <img src="./asset/naraka.jpg" /></a>
+          <p>NARAKA : Bladepoint</p>
+        </div>
+        <div class="gameContainer">
+          <a href=""> <img src="./asset/stray.jpg" /></a>
+          <p>Stray</p>
+        </div>
+        <div class="gameContainer">
+          <a href=""> <img src="./asset/planetoflana.jpg" /></a>
+          <p>Planet Of Lana</p>
+        </div>
+        <div class="gameContainer">
+          <a href=""> <img src="./asset/ow2.jpg" /></a>
+          <p>Overwatch 2</p>
+        </div>
+        <div class="gameContainer">
+          <a href="">
+            <img src="./asset/forza-horizon-5-sand-dunes-logo.avif"
+          /></a>
+          <p>Forza Horizon 5</p>
+        </div>
+        <div class="gameContainer">
+          <a href=""> <img src="./asset/nier.webp" /></a>
+          <p>Nier Replicant</p>
+        </div>
+        <div class="gameContainer">
+          <a href="">
+            <img src="./asset/forza-horizon-5-sand-dunes-logo.avif"
+          /></a>
+          <p>Forza Horizon 5</p>
         </div>
       </div>
     </div>
@@ -33,5 +114,6 @@
       src="https://kit.fontawesome.com/8fc407c20a.js"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>
