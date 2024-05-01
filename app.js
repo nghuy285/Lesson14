@@ -33,33 +33,3 @@ dots.forEach((li, key) => {
     reloadslide();
   });
 });
-
-// Search
-let keywords = [
-  "Forza Horizon 5",
-  "Overwatch 2",
-  "Nier Replicant",
-  "Litte Nightmares",
-  "Naraka Bladepoint",
-  "Spiderman Miles Morales",
-  "Stray",
-  "Unravel",
-];
-const resultsBox = document.querySelector(".result-box");
-const inputBox = document.getElementById("input-box");
-inputBox.onkeyup = function () {
-  let result = [];
-  let input = inputBox.value;
-  if (input.length) {
-    result = keywords.filter((keyword) => {
-      return keyword.toLowerCase().includes(input.toLowerCase());
-    });
-  }
-  display(result);
-};
-const display = (result) => {
-  const content = result.map((list) => {
-    return "<li>" + list + "</li>";
-  });
-  resultsBox.innerHTML = "<ul>" + content.join("") + "</ul>";
-};

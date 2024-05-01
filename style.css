@@ -270,7 +270,6 @@ body {
   gap: 2%;
   overflow: hidden;
   backdrop-filter: brightness(30%);
-
   backdrop-filter: opacity(30%);
   border-radius: 30px;
   padding: 15px;
@@ -279,6 +278,7 @@ body {
   width: 300px;
   filter: brightness(50%) blur(1px);
   border-radius: 30px;
+  transition: 0.5s;
 }
 .menu .genresList .genres img:hover {
   filter: brightness(100%);
@@ -298,12 +298,12 @@ body {
   border-radius: 20px;
   margin-top: 1%;
   margin-left: 1%;
-  width: 1380px;
-  height: 60vh;
+  width: 1370px;
+  height: 59vh;
   display: grid;
   position: relative;
   left: 20%;
-  padding: 15px 0px 0px 15px;
+  padding: 15px 0px 0px 20px;
   overflow-y: scroll;
   grid-row-gap: 10%;
   grid-column-gap: 10px;

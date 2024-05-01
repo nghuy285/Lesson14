@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./asset/logo.png" />
     <title>IDC Store</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -19,7 +20,7 @@
       <div class="container">
         <div class="search">
           <div class="box">
-            <input type="text" id="input-box" placeholder="Seach ... " />
+            <input type="text" id="myInput" onkeyup="search()" placeholder="Seach ... " />
             <a href="">
               <i class="fa-solid fa-magnifying-glass" style="color: black"></i>
             </a>
@@ -64,56 +65,62 @@
         </div>
       </div>
 
-      <div class="gameList">
+      <div class="gameList" id="myDIV">
         <div class="gameContainer">
-          <a href=""> <img src="./asset/little nightmares.jpg" /> </a>
-
+         <img src="./asset/little/little nightmares.jpg" /> 
           <p>Little Nightmare</p>
           <br />
         </div>
         <div class="gameContainer">
-          <a href=""> <img src="./asset/unravel.jpg" /> </a>
+          <img src="./asset/Unravel/unravel.jpg" /> 
           <p>Unravel</p>
           <br />
         </div>
         <div class="gameContainer">
-          <a href=""> <img src="./asset/naraka.jpg" /></a>
+          <img src="./asset/Naraka/naraka.jpg" />
           <p>NARAKA : Bladepoint</p>
         </div>
         <div class="gameContainer">
-          <a href=""> <img src="./asset/stray.jpg" /></a>
+          <img src="./asset/Stray/stray.jpg" />
           <p>Stray</p>
         </div>
         <div class="gameContainer">
-          <a href=""> <img src="./asset/planetoflana.jpg" /></a>
+          <img src="./asset/Planet/planetoflana.jpg" />
           <p>Planet Of Lana</p>
         </div>
         <div class="gameContainer">
-          <a href=""> <img src="./asset/ow2.jpg" /></a>
+          <img src="./asset/Ow2/ow2.jpg" />
           <p>Overwatch 2</p>
         </div>
         <div class="gameContainer">
-          <a href="">
-            <img src="./asset/forza-horizon-5-sand-dunes-logo.avif"
-          /></a>
+            <img src="./asset/Forza/forza-horizon-5-sand-dunes-logo.avif" />
           <p>Forza Horizon 5</p>
         </div>
         <div class="gameContainer">
-          <a href=""> <img src="./asset/nier.webp" /></a>
+          <img src="./asset/nier/nier.webp" />
           <p>Nier Replicant</p>
         </div>
-        <div class="gameContainer">
-          <a href="">
-            <img src="./asset/forza-horizon-5-sand-dunes-logo.avif"
-          /></a>
-          <p>Forza Horizon 5</p>
+        <div class="gameContainer">   
+            <img src="./asset/GOW/GOF.avif" />         
+          <p>God Of War</p>
         </div>
+        <div class="gameContainer">
+          <img src="./asset/GTA/gta-v-background1_a6657586514f4bc797c6298ce4cb78a8.webp" />
+          <p>Grand Theft Auto V</p>
+        </div>
+        <div class="gameContainer">         
+            <img src="./asset/NFS/NeedForSpeed.webp"/>
+          <p>Need for Speed</p>
+        </div>
+        <div class="gameContainer">
+          <img src="./asset/COD/COD.jpg"/>
+          <p>Call of Duty: Modern Warface III</p>
       </div>
     </div>
     <script
       src="https://kit.fontawesome.com/8fc407c20a.js"
       crossorigin="anonymous"
     ></script>
-    <script src="app.js"></script>
+    <script src="store.js"></script>   
   </body>
 </html>
