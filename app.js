@@ -393,5 +393,6 @@ function updateLoginStatus() {
 }
 
 window.onload = function () {
-  details, updateLoginStatus();
+  details();
+  updateLoginStatus();
 };
