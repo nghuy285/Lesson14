@@ -1,0 +1,116 @@
+body {
+  background-image: url("./asset/backgroundGenres.jpg");
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.gameContainer {
+  width: 300px;
+  height: 300px;
+}
+.gameList {
+  backdrop-filter: blur(20px);
+  border: 5px solid black;
+  border-radius: 20px;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-bottom: 30px;
+  width: 1300px;
+  height: 80vh;
+  display: grid;
+  position: relative;
+  left: 20%;
+  padding: 15px 0px 0px 20px;
+  overflow-y: scroll;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gameContainer p {
+  display: inline;
+  position: relative;
+  top: 2%;
+  left: 10%;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.gameContainer img {
+  border-radius: 30px;
+  height: 175px;
+  width: 300px;
+}
+.gameContainer img:hover {
+  opacity: 90%;
+  border: 1px solid white;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.gameContainer h2 {
+  display: none;
+}
+#title {
+  position: relative;
+  left: 16%;
+}
+.nav {
+  margin-bottom: 0;
+  padding: 0;
+  width: 15%;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  border: 5px solid black;
+  position: fixed;
+  left: 2%;
+  border-radius: 30px;
+  height: 82%;
+  overflow: auto;
+}
+.footer {
+  margin-top: 300px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  backdrop-filter: blur(20px) brightness(30%);
+  text-align: center;
+  padding: 10px;
+}
+.box {
+  border: none;
+  border-radius: 20px;
+}
+.search input {
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  padding: 10px;
+  width: 70%;
+  left: 10%;
+}
+.nav a {
+  position: relative;
+  top: 10%;
+  left: 20%;
+  display: flex;
+  font-size: 3vh;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: white;
+  opacity: 50%;
+  transition: 0.5s;
+}
+.nav a:hover {
+  opacity: 1;
+  left: 4rem;
+}

@@ -1,20 +1,3 @@
-function search() {
-  var input, filter, div, p, a, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDIV");
-  p = div.getElementsByClassName("gameContainer");
-  for (i = 0; i < p.length; i++) {
-    a = p[i].getElementsByTagName("p")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      p[i].style.display = "";
-    } else {
-      p[i].style.display = "none";
-    }
-  }
-}
-
 // Details
 
 let gameDetails = {
@@ -373,10 +356,174 @@ let gameDetails = {
       "“NieR Replicant is a game I won't be forgetting anytime soon. Its story is fantastically dark, incredibly unique and told in such a fascinating way, while its mix of combat and exploration has just the right hints of Zelda that make it a hell of a lot of fun to play through.” – PlayStation LifeStyle",
     ],
   },
+
+  //----------------------------------------------------------
+
+  "God Of War": {
+    name: "God of War",
+    detail:
+      "His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.",
+    release: "March 22, 2005",
+    dev: "Santa Monica Studio",
+    publisher: "Sony Interactive Entertainment",
+    lowReq: [
+      "Windows 10 64-bit",
+      "Intel i5-2500k (4 core 3.3 GHz) ",
+      "8 GB",
+      "NVIDIA GTX 960 (4 GB) ",
+      "Version 11",
+      "Broadband Internet connection",
+      "70 GB",
+    ],
+    highReq: [
+      "Windows 10 64-bit",
+      "Intel i5-6600k (4 core 3.5 GHz)",
+      "8 GB",
+      "NVIDIA GTX 1060 (6 GB)",
+      "Version 11",
+      "Broadband Internet connection",
+      "70 GB",
+    ],
+    about:
+      "Enter the Norse realm His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same. Grasp a second chance Kratos is a father again. As mentor and protector to Atreus, a son determined to earn his respect, he is forced to deal with and control the rage that has long defined him while out in a very dangerous world with his son. Journey to a dark, elemental world of fearsome creatures From the marble and columns of ornate Olympus to the gritty forests, mountains and caves of pre-Viking Norse lore, this is a distinctly new realm with its own pantheon of creatures, monsters and gods. Engage in visceral, physical combat With an over the shoulder camera that brings the player closer to the action than ever before, fights in God of War™ mirror the pantheon of Norse creatures Kratos will face: grand, gritty and grueling. A new main weapon and new abilities retain the defining spirit of the God of War series while presenting a vision of conflict that forges new ground in the genre.",
+    images: [
+      "./asset/GOW/gow1.jpg",
+      "./asset/GOW/gow2.jpg",
+      "./asset/GOW/gow3.jpg",
+      "./asset/GOW/GOF.avif",
+    ],
+    review: [
+      "- “God of War is a masterful composition of exceptional interlocking parts, deliberate in its design and its foreshadowing, which pays off in unexpected ways in both the gameplay and story.” - IGN",
+      "- “God of War is a technical and artistic marvel. It’s a game that, no matter how much you see of it, always has something amazing in store for you.” - GameSpot",
+    ],
+  },
+
+  //------------------------------------------------------
+
+  "Grand Theft Auto V": {
+    name: "Grand Theft Auto V",
+    detail:
+      "Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second.",
+    release: "September 17, 2013",
+    dev: "Rockstar North",
+    publisher: "Rockstar Games",
+    lowReq: [
+      "Windows 10 64bit",
+      "Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs)",
+      "4 GB RAM",
+      "NVIDIA 9800 GT 1GB ",
+      "Version 11",
+      "Broadband Internet connection",
+      "110 GB",
+    ],
+    highReq: [
+      "Windows 10 64 Bit",
+      "Intel Core i5 3470 @ 3.2GHZ (4 CPUs)",
+      "8 GB RAM",
+      "NVIDIA GTX 660 2GB / AMD HD 7870 2GB",
+      "Version 11",
+      "Broadband Internet connection",
+      "110 GB",
+    ],
+    about:
+      "When a young street hustler, a retired bank robber and a terrifying psychopath find themselves entangled with some of the most frightening and deranged elements of the criminal underworld, the U.S. government and the entertainment industry, they must pull off a series of dangerous heists to survive in a ruthless city in which they can trust nobody, least of all each other. Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second. The game offers players a huge range of PC-specific customization options, including over 25 separate configurable settings for texture quality, shaders, tessellation, anti-aliasing and more, as well as support and extensive customization for mouse and keyboard controls. Additional options include a population density slider to control car and pedestrian traffic, as well as dual and triple monitor support, 3D compatibility, and plug-and-play controller support.",
+    images: [
+      "./asset/GTA/gta1.jpg",
+      "./asset/GTA/gta2.jpg",
+      "./asset/GTA/gta3.jpg",
+      "./asset/GTA/gta-v-background1_a6657586514f4bc797c6298ce4cb78a8.webp",
+    ],
+    review: [
+      "- “Grand Theft Auto V is not only a preposterously enjoyable video game, but also an intelligent and sharp-tongued satire of contemporary America.” - The Guardian",
+      "- “Rockstar's latest and greatest game yet not only incorporates a ton of improvements to the free-roaming genre, but also redefines the experience of being in a virtual world.” - GameSpot",
+    ],
+  },
+
+  //---------------------------------------------------
+
+  "Need for Speed": {
+    name: "Need for Speed",
+    detail:
+      "Ready to own the streets? Get behind the wheel of iconic cars and floor it through Ventura Bay, a sprawling urban playground. Explore overlapping stories as you build your reputation – and your dream car - and become the ultimate racing icon.",
+    release: "August 31, 1994",
+    dev: "EA Canada, EA Black Box, Slightly Mad Studios, Ghost Games",
+    publisher: "Electronic Arts",
+    lowReq: [
+      "64-bit Windows 7 or later",
+      "Intel Core i3-4130 or equivalent with 4 hardware threads",
+      "6 GB RAM",
+      "NVIDIA GeForce GTX 750 Ti 2GB",
+      "Version 11",
+      "Broadband Internet connection",
+      "Storage Space: 30 GB",
+    ],
+    highReq: [
+      "Windows 10",
+      "Core i7-4790 or equivalent",
+      "16 GB RAM",
+      "GeForce GTX 1060 or equivalent",
+      "Version 11",
+      "Broadband Internet connection",
+      "Hard Drive Space: 50 GB",
+    ],
+    about:
+      "Ready to own the streets? Get behind the wheel of iconic cars and floor it through Ventura Bay, a sprawling urban playground. Explore overlapping stories as you build your reputation – and your dream car – and become the ultimate racing icon.",
+    images: [
+      "./asset/NFS/nfs1.jpg",
+      "./asset/NFS/nfs2.jpg",
+      "./asset/NFS/nfs3.jpg",
+      "./asset/NFS/NeedForSpeed.webp",
+    ],
+    review: [
+      "- “Need for Speed returns with 5 unique ways to play: Speed, Style, Build, Crew and Outlaw, enabling you to earn reputation and ultimately win your way.” - Metacritic",
+      "- “The Need for Speed series returns, this time reverting back to the ‘chase’ arcade experience instead of a racing simulation. Top speed and skill are needed to win.” - IGN",
+    ],
+  },
+
+  //------------------------------------------------------
+
+  "Call of Duty: Modern Warface III": {
+    name: "COD: Modern Warface III",
+    detail:
+      "In the direct sequel to the record-breaking Call of Duty®: Modern Warfare® II, Captain Price and Task Force 141 face off against the ultimate threat.",
+    release: "November 10, 2023",
+    dev: "Sledgehammer Games, Infinity Ward, Treyarch",
+    publisher: "Activision",
+    lowReq: [
+      "Windows 10 64 Bit (latest update)",
+      "Intel Core i5-6600 or AMD Ryzen 5 1400",
+      "8 GB RAM",
+      "NVIDIA GTX 960 (2 GB)",
+      "Version 11",
+      "Broadband Internet connection",
+      "149 GB",
+    ],
+    highReq: [
+      "OS: Windows 10 64 Bit (latest update)",
+      "CPU: Intel Core i7-6700K or AMD Ryzen 5 1600X",
+      "RAM: 16 GB",
+      "Video Card: NVIDIA GeForce GTX 1080Ti",
+      "Version 11",
+      "Broadband Internet connection",
+      "Storage Space: 149 GB",
+    ],
+    about:
+      "ADAPT OR DIE IN A FIGHT AGAINST THE ULTIMATE THREAT In the direct sequel to the record-breaking Call of Duty®: Modern Warfare® II, Captain Price and Task Force 141 face off against the ultimate threat. The ultranationalist war criminal Vladimir Makarov is extending his grasp across the world causing Task Force 141 to fight like never before. IT’S TIME TO SETTLE OLD SCORES AND START NEW ONES Modern Warfare® III celebrates the 20th anniversary of Call of Duty® with one of the greatest collections of Multiplayer maps ever assembled - both fan favorites and all new ones. All 16 launch maps from the original Modern Warfare® 2 (2009) have been modernized with new modes and gameplay features and will be available at launch to get everyone started, while over 12 all-new core 6v6 maps will fuel post-launch live seasons. ALL NEW OPEN WORLD ZOMBIES For the first time, team up with other squads to survive and fight massive hordes of the undead in the largest Call of Duty® Zombies map ever. Modern Warfare® Zombies (MWZ) tells a new Treyarch Zombies story with missions, core Zombies features, and secrets to discover. MATURE CON",
+    images: [
+      "./asset/COD/cod1.jpg",
+      "./asset/COD/cod2.jpg",
+      "./asset/COD/cod3.jpg",
+      "./asset/COD/COD.jpg",
+    ],
+    review: [
+      "- “Modern Warfare 3 comes to us by way of an older engine, but still looks great. Sure, it’s not among the very best out there nowadays, but it performs well.” - IGN",
+      "- “Call of Duty: Modern Warfare 3 doesn’t do anything new, but it also doesn’t do anything wrong. For better or worse, this is a slick and well-metered trio of modes that make an entertaining package.” - GameSpot",
+    ],
+  },
 };
+
 let game = document.getElementsByClassName("gameContainer");
 function details() {
-  console.log("details function is running");
   for (let i = 0; i < game.length; i++) {
     let gameName = game[i].getElementsByTagName("p")[0].textContent;
     game[i].addEventListener("click", function () {
@@ -385,4 +532,43 @@ function details() {
     });
   }
 }
-window.onload = details;
+
+let genreDetails = {
+  Adventure: {
+    title: "Adventure",
+    isHidden: false,
+  },
+  Driving: {
+    title: "Driving",
+  },
+  FPS: {
+    title: "FPS",
+  },
+  Action: {
+    title: "Action",
+  },
+};
+let genres = document.getElementsByClassName("genresContainer");
+function showGenres() {
+  for (let i = 0; i < genres.length; i++) {
+    let genresName = genres[i].getElementsByTagName("p")[0].textContent;
+    genres[i].addEventListener("click", function () {
+      localStorage.setItem(
+        "genreDetail",
+        JSON.stringify(genreDetails[genresName])
+      );
+      window.location.href = "genres.html";
+    });
+  }
+}
+function updateLoginStatus() {
+  var check = JSON.parse(sessionStorage.getItem("isLoggedIn"));
+  var accountButtons = document.getElementsByClassName("account");
+  for (var i = 0; i < accountButtons.length; i++) {
+    if (check) {
+      accountButtons[i].style.display = "none";
+    } else {
+      accountButtons[i].style.display = "flex";
+    }
+  }
+}

@@ -43,7 +43,7 @@ const login = () => {
     alert("Please type again");
   } else if (username == data.username && password == data.password) {
     alert("Login success");
-    localStorage.setItem("isLoggedIn", true);
+    sessionStorage.setItem("isLoggedIn", JSON.stringify(true));
     window.location.href = "index.html";
   } else {
     alert("Login failed");

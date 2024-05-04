@@ -39,26 +39,26 @@
         <div class="genresList">
           <div class="genres">
             <div class="genresContainer">
-              <a href="adventure.html"><img src="./asset/adventure.jpg" /></a>
+              <img src="./asset/adventure.jpg" />
               <p>Adventure</p>
             </div>
           </div>
           <div class="genres">
             <div class="genresContainer">
-              <a href=""><img src="./asset/driving.jpg" /></a>
+              <img src="./asset/driving.jpg" />
               <p>Driving</p>
             </div>
           </div>
           <div class="genres">
             <div class="genresContainer">
-              <a href=""><img src="./asset/fps.jpg" /></a>
+              <img src="./asset/fps.jpg" />
               <p>FPS</p>
             </div>
           </div>
 
           <div class="genres">
             <div class="genresContainer">
-              <a href=""><img src="./asset/action.jpg" /></a>
+              <img src="./asset/action.jpg" />
               <p>Action</p>
             </div>
           </div>
@@ -121,6 +121,28 @@
       src="https://kit.fontawesome.com/8fc407c20a.js"
       crossorigin="anonymous"
     ></script>
+    
     <script src="store.js"></script>   
+    <script>function search() {
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDIV");
+      p = div.getElementsByClassName("gameContainer");
+      for (i = 0; i < p.length; i++) {
+        a = p[i].getElementsByTagName("p")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          p[i].style.display = "";
+        } else {
+          p[i].style.display = "none";
+        }
+      }
+    }</script>
+    <script>
+    window.onload = function () {
+      details();
+      showGenres();
+      updateLoginStatus();
+    };</script>
   </body>
 </html>
