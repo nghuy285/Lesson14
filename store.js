@@ -301,10 +301,10 @@ let gameDetails = {
     about:
       "Forza Horizon 5 is an open-world racing game that invites players to explore a stunning virtual Mexico. Developed by Playground Games and published by Xbox Game Studios, the game features a diverse car list, dynamic weather, and breathtaking landscapes. Whether you're racing through cities or off-road trails, Forza Horizon 5 promises an exhilarating experience.",
     images: [
-      "./asset/forza/forza5_1.jpg",
-      "./asset/forza/forza5_2.jpg",
-      "./asset/forza/forza5_3.jpg",
-      "./asset/forza/forza-horizon-5-sand-dunes-logo.avif",
+      "./asset/Forza/forza5_1.jpg",
+      "./asset/Forza/forza5_2.jpg",
+      "./asset/Forza/forza5_3.jpg",
+      "./asset/Forza/forza-horizon-5-sand-dunes-logo.avif",
     ],
     review: [
       "- “Forza Horizon 5 is shaping up to be the ultimate racing playground, with stunning visuals and a wide variety of cars to choose from.” – IGN",
