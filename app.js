@@ -231,10 +231,10 @@ let gameDetails = {
       "Little Nightmares is a captivating puzzle-platform horror adventure game developed by Tarsier Studios and published by Bandai Namco Entertainment. Released in April 2017 for PlayStation 4, Windows, and Xbox One, it has since made its way to other platforms, including Nintendo Switch, Google Stadia, and mobile devices1. Here’s a glimpse into the eerie world of Little Nightmares: Plot: The game unfolds in a mysterious setting known as the Maw, an enormous, submerged iron vessel inhabited by grotesque and twisted beings. Our protagonist is Six, a nine-year-old girl clad in a yellow raincoat. She awakens from a dream and finds herself trapped within the bowels of the Maw. Armed only with a lighter, Six embarks on a treacherous journey to escape her nightmarish surroundings. Along the way, she encounters peculiar creatures called Nomes, which either flee from her or curiously observe her efforts. She can even choose to hug these Nomes. The Maw is also home to carnivorous Leeches and artificial eyes that turn her to stone if caught in their gaze. Hunger plagues Six, and she experiences debilitating bouts of it. Whenever she eats, a shadowy, flickering version of herself appears1. Gameplay: The world of Little Nightmares is presented in a 2.5D format. Players navigate through platformer elements, solving puzzles to progress. Unlike typical action heroes, Six lacks combat abilities, emphasizing stealth and evasion. Occasionally, she acquires tools that allow her to fight back against her adversaries. The game’s atmosphere, graphics, and sound have received acclaim, although some critics noted its short length and checkpoint system1. Meaning and Symbolism: Little Nightmares delves into themes of despair, hopelessness, and oppression. It represents a cycle where a child becomes the very monster they once feared. The torment Six endures within the Maw leads to disengagement from all adults, creating a haunting hierarchy of suffering2. Follow-Ups: A sequel titled Little Nightmares II was released in February 2021. Additionally, a third entry in the series, Little Nightmares III, is currently in development by Supermassive Games1. So, venture forth with Six, unravel the mysteries of the Maw, and confront the darkness that lurks within this captivating nightmare world. 🌙🕯️",
     ],
     images: [
-      "./asset/little/little1.jpg",
-      "./asset/little/little2.jpg",
-      "./asset/little/little3.jpg",
-      "./asset/little/little nightmares.jpg",
+      "./asset/Little/little1.jpg",
+      "./asset/Little/little2.jpg",
+      "./asset/Little/little3.jpg",
+      "./asset/Little/little nightmares.jpg",
     ],
     review: [
       "- “This is a horror game that genuinely has new things to show you.” 78/100 - PC Gamer",
