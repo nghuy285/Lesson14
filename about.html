@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <div class="navbar" style="display: flex">
+      <img src="./asset/logo.png" alt="" id="logo" />
+
+      <a href="./index.html">Home</a>
+      <a href="./store.html">Store</a>
+    </div>
+
+    <div class="about1">
+      <h1>IDC STORE</h1>
+      <p>Tận hưởng thế giới game không giới hạn</p>
+      <p>"NOTHING IS ABSOLUTE, NOTHING IS FOREVER, NOTHING FROM NOTHING"</p>
+    </div>
+    <div class="about2">
+      <h1>IDC Là gì ?</h1>
+      <p style="color: red; font-weight: bold">“Infinite Digital Console”</p>
+      <p>
+        - “Infinite” (Vô tận): Thể hiện sự phong phú, đa dạng của các trò chơi
+        trên website, cung cấp cho người chơi nhiều lựa chọn không giới hạn.
+      </p>
+      <p>
+        - “Digital” (Kỹ thuật số): Liên quan đến việc các trò chơi được phát
+        hành và chơi trực tuyến thông qua nền tảng kỹ thuật số.
+      </p>
+      <p>
+        - “Console” (Máy chơi game): Đây là từ dùng để chỉ các hệ thống chơi
+        game, như PlayStation, Xbox, hoặc Nintendo Switch. Trong trường hợp này,
+        nó có thể được hiểu là website cung cấp một “máy chơi game” kỹ thuật số
+        với vô số trò chơi để khám phá.
+      </p>
+      <p style="color: #f1b1c5">
+        “Infinite Digital Console” có thể được hiểu là một nền tảng kỹ thuật số
+        với vô số lựa chọn trò chơi để người chơi khám phá.
+      </p>
+      <h1>Mục đích hoạt động của IDC</h1>
+      <p>
+        - Infinite Digital Console hoạt động như một cầu nối giữa game thủ và
+        thế giới game kỹ thuật số. Chúng tôi cung cấp một kho game đa dạng, từ
+        các tựa game hành động gay cấn, game phiêu lưu hấp dẫn cho đến game giáo
+        dục bổ ích. Người chơi có thể dễ dàng tìm kiếm, so sánh và chọn lựa game
+        ưng ý nhất.
+      </p>
+      <p>
+        - Bên cạnh đó, Infinite Digital Console còn tập trung vào việc tạo ra
+        một trải nghiệm mua sắm trực tuyến an toàn và tiện lợi. Chúng tôi áp
+        dụng các biện pháp bảo mật thông tin khách hàng nghiêm ngặt và hỗ trợ
+        nhiều hình thức thanh toán linh hoạt.
+      </p>
+      <p>
+        - Đặc biệt, Infinite Digital Console luôn lắng nghe và tiếp thu phản hồi
+        từ người dùng để không ngừng cải tiến và nâng cao chất lượng dịch vụ.
+        Chúng tôi tin rằng, với sự cố gắng không ngừng, Infinite Digital Console
+        sẽ trở thành điểm đến lý tưởng cho mọi game thủ.
+      </p>
+    </div>
+    <div class="img">
+      <img src="./asset/action.jpg" alt="" />
+      <img src="./asset/fps.jpg" alt="" />
+    </div>
+    <a href="./signup.html" class="button">Join With Us</a>
+    <div class="about3">
+      <h1 style="margin-bottom: 50px; text-decoration: underline">DEVELOPER</h1>
+      <img src="./asset/avatar.jpg" alt="" />
+
+      <h2>Nguyễn Gia Huy</h2>
+      <p>
+        “Infinite Digital Console - không chỉ là một trang web, mà còn là cánh
+        cửa mở ra thế giới game vô tận, nơi mỗi cuộc phiêu lưu kỹ thuật số đều
+        mang đến niềm vui và trải nghiệm đáng nhớ.”
+      </p>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+    <div class="footer">
+      <p>© 2024 My Website. All rights reserved.</p>
+      <p>Contact with us: FB Zalo Instagram</p>
+    </div>
+
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
+      }
+
+      // Khi người dùng nhấp vào nút, cuộn đến đầu trang
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>

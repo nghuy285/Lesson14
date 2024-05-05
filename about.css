@@ -1,0 +1,125 @@
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+  padding: 0;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  margin-top: 20px;
+  font-size: 20px;
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid white;
+}
+.about1 {
+  background-image: url(./asset/backgroundAbout.jpg);
+  backdrop-filter: blur(50%);
+  background-size: cover;
+  width: 99vw;
+  height: 60vh;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+.about1 h1 {
+  position: relative;
+  top: 30%;
+}
+.about1 p {
+  position: relative;
+  top: 30%;
+}
+
+.navbar #logo {
+  width: 5vw;
+  position: relative;
+}
+.about2 {
+  width: 70%;
+  background-color: #202020;
+  position: relative;
+  margin-top: 5%;
+  border-radius: 5px;
+  padding: 10px;
+  left: 15%;
+  padding-bottom: 5%;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.about3 {
+  width: 99vw;
+  margin-top: 10%;
+  gap: 5%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.about3 img {
+  width: 10%;
+  border-radius: 50%;
+}
+.about3 p {
+  position: relative;
+  left: 35%;
+  width: 30%;
+}
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.img {
+  margin-top: 10%;
+  display: flex;
+  margin-left: 5%;
+}
+.img img {
+  width: 45%;
+}
+.button {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  backdrop-filter: blur(100px);
+  padding: 30px 80px;
+  position: relative;
+  left: 41%;
+  bottom: 14rem;
+}
+.button:hover {
+  background-color: black;
+}
